@@ -84,7 +84,39 @@ h2 {
 .countdown #minute::before {
   content: "Minutes";
 }
+@media (max-width: 480px) {
+  .logo {
+    width: 200px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+  }
 
+  h2 {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+
+  .year {
+    font-size: 2.5em;
+  }
+
+  .countdown {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .countdown div {
+    font-size: 1.6em;
+  }
+
+  .countdown div::before {
+    bottom: -22px;
+    font-size: 0.4em;
+  }
+}
 .countdown #second::before {
   content: "Seconds";
 }
+
